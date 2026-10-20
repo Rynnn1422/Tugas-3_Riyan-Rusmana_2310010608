@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mahasiswa - Formulir &amp; Data</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; color: #333; line-height: 1.6; }
+        header, footer { background: #24476b; color: white; padding: 18px 24px; }
+        nav a { color: white; margin-right: 16px; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        main { max-width: 1000px; margin: 25px auto; padding: 24px; background: white; border: 1px solid #ddd; border-radius: 8px; }
+        .table-wrapper { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+        caption { font-weight: bold; padding: 12px; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+        thead, tfoot { background: #e8eef5; }
+        tbody tr:nth-child(even) { background: #f8fafc; }
+        footer { text-align: center; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulir &amp; Data</h1>
+        <nav aria-label="Navigasi utama">
+            <a href="data.html">Data Mahasiswa</a>
+            <a href="form.html">Formulir Pendaftaran UKM</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Data Mahasiswa</h2>
+        <p>Berikut contoh data mahasiswa Program Studi Teknik Informatika dalam satu angkatan.</p>
+        <div class="table-wrapper">
+            <table>
+                <caption>Data Mahasiswa Teknik Informatika Angkatan 2023</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">No</th><th scope="col">NPM</th><th scope="col">Nama</th>
+                        <th scope="col">Prodi</th><th scope="col">Semester</th>
+                        <th scope="col">Status</th><th scope="col">Angkatan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>2310010608</td><td>Riyan Rusmana</td><td>Teknik Informatika</td><td>7</td><td>Aktif</td><td rowspan="8">2023</td></tr>
+                    <tr><td>2</td><td>2310010640</td><td>Siti Fatimatuz Zahra</td><td>Teknik Informatika</td><td>7</td><td>Aktif</td></tr>
+                    <tr><td>3</td><td>2310010592</td><td>Peny Vedia Salsa Bella</td><td>Teknik Informatika</td><td>7</td><td>Aktif</td></tr>
+                    <tr><td>4</td><td>2310010314</td><td>Arya Lugas Weda Wijaya</td><td>Teknik Informatika</td><td>7</td><td>Aktif</td></tr>
+                    <tr><td>5</td><td>2310010376</td><td>Muhammad Rifky Fadhilah</td><td>Teknik Informatika</td><td>7</td><td>Aktif</td></tr>
+                    <tr><td>6</td><td>2310010544</td><td>Muhammad Nandi Azis Mochtar</td><td>Teknik Informatika</td><td>7</td><td>Aktif</td></tr>
+                    <tr><td>7</td><td>2310010405</td><td>Heni Taurina Septiany Diva</td><td>Teknik Informatika</td><td>7</td><td>Aktif</td></tr>
+                    <tr><td>8</td><td>2310010221</td><td>Juwita Rayani Qibthiya</td><td>Teknik Informatika</td><td>7</td><td>Aktif</td></tr>
+                </tbody>
+                <tfoot>
+                    <tr><th colspan="6" scope="row">Jumlah mahasiswa</th><td>8 orang</td></tr>
+                </tfoot>
+            </table>
+        </div>
+        <p><small>Catatan: data ini hanya contoh.</small></p>
+    </main>
+
+    <footer><p>&copy; 2026 Formulir &amp; Data - Latihan HTML</p></footer>
+</body>
+</html>

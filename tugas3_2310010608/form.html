@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran UKM - Formulir &amp; Data</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; color: #333; line-height: 1.6; }
+        header, footer { background: #24476b; color: white; padding: 18px 24px; }
+        nav a { color: white; margin-right: 16px; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        main { max-width: 760px; margin: 25px auto; padding: 24px; background: white; border: 1px solid #ddd; border-radius: 8px; }
+        .form-group { margin-bottom: 16px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select, textarea { box-sizing: border-box; width: 100%; padding: 10px; border: 1px solid #bfc7d1; border-radius: 4px; font: inherit; }
+        fieldset { margin: 0 0 16px; padding: 14px; border: 1px solid #bfc7d1; border-radius: 4px; }
+        legend { font-weight: bold; }
+        .option { display: flex; align-items: center; gap: 8px; margin: 8px 0; font-weight: normal; }
+        .option input { width: auto; }
+        .buttons { display: flex; gap: 10px; margin-top: 20px; }
+        button { padding: 10px 18px; border: 0; border-radius: 4px; font: inherit; cursor: pointer; }
+        button[type="submit"] { background: #24476b; color: white; }
+        button[type="reset"] { background: #e4e7eb; color: #333; }
+        footer { text-align: center; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulir &amp; Data</h1>
+        <nav aria-label="Navigasi utama">
+            <a href="data.html">Data Mahasiswa</a>
+            <a href="form.html">Formulir Pendaftaran UKM</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Formulir Pendaftaran UKM</h2>
+        <p>Silakan isi data dengan benar. Kolom bertanda * wajib diisi.</p>
+
+        <form action="#" method="get">
+            <div class="form-group">
+                <label for="nama">Nama lengkap *</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password *</label>
+                <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" minlength="8" required>
+            </div>
+
+            <div class="form-group">
+                <label for="npm">NPM *</label>
+                <input type="text" id="npm" name="npm" placeholder="Masukkan NPM" required>
+            </div>
+
+            <div class="form-group">
+                <label for="umur">Umur *</label>
+                <input type="number" id="umur" name="umur" min="17" max="60" placeholder="17–60 tahun" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tanggal">Tanggal pendaftaran *</label>
+                <input type="date" id="tanggal" name="tanggal" required>
+            </div>
+
+            <fieldset>
+                <legend>Jenis keanggotaan *</legend>
+                <label class="option" for="anggota-baru"><input type="radio" id="anggota-baru" name="keanggotaan" value="anggota-baru" required> Anggota baru</label>
+                <label class="option" for="pernah"><input type="radio" id="pernah" name="keanggotaan" value="pernah"> Pernah mengikuti UKM</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Hobi yang diminati *</legend>
+                <label class="option" for="game"><input type="checkbox" id="game" name="hobi[]" value="game"> Bermain game</label>
+                <label class="option" for="renang"><input type="checkbox" id="renang" name="hobi[]" value="renang"> Berenang</label>
+                <label class="option" for="badminton"><input type="checkbox" id="badminton" name="hobi[]" value="badminton"> Badminton</label>
+                <label class="option" for="jalan-kaki"><input type="checkbox" id="jalan-kaki" name="hobi[]" value="jalan-kaki"> Jalan kaki</label>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="ukm">UKM yang dipilih *</label>
+                <select id="ukm" name="ukm" required>
+                    <option value="">-- Pilih UKM --</option>
+                    <option value="olahraga">UKM Olahraga</option>
+                    <option value="seni">UKM Seni dan Budaya</option>
+                    <option value="teknologi">UKM Teknologi</option>
+                    <option value="pers">UKM Pers Mahasiswa</option>
+                    <option value="pecinta-alam">UKM Pecinta Alam</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="alasan">Alasan bergabung *</label>
+                <textarea id="alasan" name="alasan" rows="4" placeholder="Tuliskan alasan ingin bergabung..." required></textarea>
+            </div>
+
+            <div class="buttons">
+                <button type="submit">Kirim Pendaftaran</button>
+                <button type="reset">Reset Form</button>
+            </div>
+        </form>
+    </main>
+
+    <footer><p>&copy; 2026 Formulir &amp; Data - Latihan HTML</p></footer>
+</body>
+</html>
